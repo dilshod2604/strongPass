@@ -3,7 +3,7 @@ import localFont from "next/font/local";
 import "./globals.css";
 
 const ManopeSans = localFont({
-  src: "./fonts/Manrope-VariableFont_wght.ttf ",
+  src: "./fonts/Manrope-VariableFont_wght.ttf",
   variable: "--font-manrope-sans",
   weight: "400 900",
 });
