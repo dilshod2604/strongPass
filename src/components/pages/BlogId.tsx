@@ -1,11 +1,11 @@
 import React from "react";
-import BlogIdHeader from "./BlogIdSections.tsx/BlogIdHeader";
+import BlogIdinfo from "./BlogIdSections.tsx/BlogIdInfo";
 
 const BlogId = () => {
   return (
     <div>
       <>
-        <BlogIdHeader />
+        <BlogIdinfo />
       </>
     </div>
   );
