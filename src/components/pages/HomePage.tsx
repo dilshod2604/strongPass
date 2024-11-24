@@ -1,10 +1,10 @@
 import React from "react";
-import DownLoad from "./DownLoad";
+import Welcome from "./HomePageSections/Welcome";
 
 const HomePage = () => {
   return (
     <>
-      <DownLoad />
+      <Welcome/>
     </>
   );
 };

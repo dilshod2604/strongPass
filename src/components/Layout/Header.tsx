@@ -1,57 +1,42 @@
-"use client";
-
-import { links } from "@/constants/links";
+import Image from "next/image";
+import Nav from "./ui/Nav";
+import headerLogo from "../../assets/header-logos/img/strongpass-logo.svg";
+import rightArrow from "../../assets/header-logos/img/strongpass-right-logo.svg"
 import Link from "next/link";
-import React, { useState } from "react";
 
 const Header = () => {
-  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
-
-  const toggleDropdown = () => {
-    setIsDropdownOpen(!isDropdownOpen);
-  };
-
   return (
     <header>
       <div className="container">
         <div className="flex items-center justify-between py-[27px]">
-          <div className="flex items-center gap-[50px]">
-            <h1>Logo</h1>
+          <div className="flex items-center gap-[80px]">
+              <Link href='/'>
+              <Image
+                src={headerLogo}
+                alt="header-logo"
+                width={60}
+                height={60}
+              />
+              </Link>
 
-            <nav>
-              <ul className="flex items-center gap-[31px]">
-                <li className="relative">
-                  <button onClick={toggleDropdown} className="text-left">
-                    Продукты
-                  </button>
-                  {isDropdownOpen && (
-                    <ul className="dropdown-menu absolute bg-white shadow-lg p-4 mt-2 border rounded-[20px] min-w-[220px]">
-                      <li className="border-b border-gray-300 py-2">
-                        <Link href="/products/activeSecure">Проактивная защита</Link>
-                      </li>
-                      <li className="border-b border-gray-300 py-2">
-                        <Link href="/products/selfcheck">Самопроверка</Link>
-                      </li>
-                      <li className="py-2">
-                        <Link href="/products/almetibin">Almetibin</Link>
-                      </li>
-                    </ul>
-                  )}
-                </li>
-                {links.map((item, index) => (
-                  <li key={index}>
-                    <Link href={item.link}>{item.name}</Link>
-                  </li>
-                ))}
-              </ul>
-            </nav>
+            <Nav />
           </div>
-          
 
-          <div className="flex gap-[20px]">
-              <button className="border-2 border-green-500 bg-transparent text-green-500">Задать вопрос</button>
-              <button>Стрелка</button>
-            </div>
+          <div className="flex">
+            <button
+              className="border-2 border-[#408077] bg-transparent text-[#408077] py-[10px] px-[30px] rounded-[13px]"
+            >
+              Задать вопрос
+            </button>
+            <button className="bg-[#408077] w-[47px] h-[47px] flex items-center justify-center rounded-[13px]">
+            <Image
+                src={rightArrow}
+                alt="header-logo"
+                width={14}
+                height={14}
+              />
+            </button>
+          </div>
         </div>
       </div>
     </header>
@@ -59,4 +44,3 @@ const Header = () => {
 };
 
 export default Header;
-
