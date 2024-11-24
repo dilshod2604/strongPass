@@ -42,7 +42,7 @@ const DownLoadSec = () => {
                   <h1 className="text-[32px] font-semibold text-[#262F33]">
                     {item.name}
                   </h1>
-                  <p className="text-[18px] text-[#262F33]  font-normal">
+                  <p className="text-[18px] text-[#262F33]  font-normal max-w-[484px]">
                     {item.description}
                   </p>
                 </div>
