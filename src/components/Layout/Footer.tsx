@@ -1,12 +1,63 @@
 import React from 'react';
+import FooterLogo from "../../assets/footer-logos/img/Footer-logo.svg";
+import Image from "next/image";
 
 const Footer = () => {
   return (
-    <footer>
-      <div className='container'>
-        <div>
-          Footer
+    <footer className='mt-[110px]'>
+      <div className="container">
+        {/* MAIN  */}
+        <div className='flex items-start justify-between py-[30px]'>
+          {/* FOOTER LOGO  */}
+          <div>
+            <Image src={FooterLogo} alt="header-logo" width={60} height={60} />
+          </div>
+          {/* FOOTER LOGO  */} 
+
+
+
+
+          {/* ROW1  */}
+          <div className='flex flex-col gap-[6px]'>
+            <span className='text-[16px] font-[600] text-[#7A7E80]'>Продукты и решения</span>
+            <p className='text-[16px] font-[600] text-[#262F33] mt-[10px]'>Strongpass. Проактивная защита.</p>
+            <p className='text-[16px] font-[600] text-[#262F33]'>Strongpass. Самопроверка.</p>
+            <p className='text-[16px] font-[600] text-[#262F33]'>Almetibin.</p>
+          </div>
+          {/* ROW1  */}
+
+          {/* ROW2  */}
+          <div className='flex flex-col gap-[6px]'>
+            <p className='text-[16px] font-[600] text-[#262F33]'>Скачать</p>
+            <p className='text-[16px] font-[600] text-[#262F33]'>Купить</p>
+            <p className='text-[16px] font-[600] text-[#262F33]'>Статьи</p>
+            <p className='text-[16px] font-[600] text-[#262F33]'>Документация</p>
+            <p className='text-[16px] font-[600] text-[#262F33]'>Контакты</p>
+          </div>
+          {/* ROW2  */}
+
+          {/* ROW3  */}
+          <div className='flex flex-col gap-[6px]'>
+            <span className='text-[16px] font-[600] text-[#7A7E80]'>Коммерческие вопросы:</span>
+            <p className='text-[16px] font-[600] text-[#262F33]'>contact@strongpass.ru</p>
+            <span className='text-[16px] font-[600] text-[#7A7E80]'>Техническая поддержка:</span>
+            <p className='text-[16px] font-[600] text-[#262F33]'>support@strongpass.ru</p>
+            <h6 className='text-[16px] font-[600] text-[#408077]'>Написать нам</h6>
+          </div>
+          {/* ROW3  */}
+
         </div>
+        {/* MAIN  */}
+
+
+
+        {/* UNDER FOOTER  */}
+        <div className='flex items-center justify-between my-[24px]'>
+          <p className='text-[16px] font-[400] text-[#7A7E80]'>© 2023-2024. </p>
+          <p className='text-[16px] font-[400] text-[#7A7E80] underline'>Политика конфиденциальности</p>
+          <p className='text-[16px] font-[400] text-[#7A7E80]'>Сделано в IANT STUDIO</p>
+        </div>
+        {/* UNDER FOOTER  */}
       </div>
     </footer>
   );
