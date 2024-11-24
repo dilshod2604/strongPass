@@ -1,6 +1,6 @@
 "use client";
 import React, { useState } from "react";
-import { BiSolidCopy } from "react-icons/bi";
+// import { BiSolidCopy } from "react-icons/bi";
 
 const CopyText = () => {
   const [message, setMessage] = useState("");
@@ -19,11 +19,11 @@ const CopyText = () => {
   return (
     <div className="flex  flex-col  gap-y-4 px-[24px] py-[20px] rounded-lg bg-[#F2F5F4] ">
       <p className="text-lg text-[#262F33] font-normal">{text}</p>
-      <BiSolidCopy
+      {/* <BiSolidCopy
         size={16}
         className="text-[#408077] hover:scale-105 transition-all"
         onClick={handleCopy}
-      />
+      /> */}
     </div>
   );
 };

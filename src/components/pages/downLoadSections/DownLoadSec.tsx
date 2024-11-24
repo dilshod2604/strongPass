@@ -4,7 +4,7 @@ import Secure from "@/components/Layout/ui/Secure";
 import { download } from "@/constants/links";
 import Image from "next/image";
 import passwordIcon from "../../../assets/downloadIcons/password.svg";
-import { RiDownloadLine } from "react-icons/ri";
+// import { RiDownloadLine } from "react-icons/ri";
 
 const DownLoadSec = () => {
   return (
@@ -58,7 +58,7 @@ const DownLoadSec = () => {
                       Скачать
                     </button>
                     <button className=" flex items-center justify-center w-[57px] h-[57px] rounded-xl bg-[#408077] text-white hover:bg-white hover:text-[#408077] border  hover:border-[#408077] transition-all duration-500">
-                      <RiDownloadLine size={15} />
+                      {/* <RiDownloadLine size={15} /> */}
                     </button>
                   </div>
                 </div>

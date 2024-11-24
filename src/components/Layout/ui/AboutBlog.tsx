@@ -2,7 +2,7 @@ import React from "react";
 import CopyText from "./CopyText";
 import Image from "next/image";
 import Link from "next/link";
-import { GoArrowRight } from "react-icons/go";
+// import { GoArrowRight } from "react-icons/go";
 import comaIcon from "../../../assets/blogImages/blogId/coma.svg";
 import image10 from "../../../assets/blogImages/blogId/image 10.png";
 
@@ -104,7 +104,7 @@ const AboutBlog = () => {
               className="flex items-center gap-x-3 text-lg text-[#408077] font-semibold"
             >
               Узнать больше
-              <GoArrowRight />
+              {/* <GoArrowRight /> */}
             </Link>
           </div>
         </div>

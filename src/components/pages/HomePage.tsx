@@ -3,6 +3,7 @@ import Welcome from "./HomePageSections/Welcome";
 import HomeProducts from "./HomePageSections/HomeProducts";
 import AboutPassword from "./HomePageSections/AboutPassword";
 import QuestionForm from "../Layout/ui/questionForm/QuestionForm";
+import ArticleBlock from "../Layout/ui/articleBlock/ArticleBlock";
 
 const HomePage = () => {
   return (
@@ -11,6 +12,7 @@ const HomePage = () => {
       <HomeProducts/>
       <AboutPassword/>
       <QuestionForm/>
+      <ArticleBlock/>
     </>
   );
 };
