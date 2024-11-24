@@ -1,9 +1,12 @@
-import React from 'react'
+import Blogs from "@/components/pages/Blogs";
+import React from "react";
 
 const page = () => {
   return (
-    <>article</>
-  )
-}
+    <>
+      <Blogs />
+    </>
+  );
+};
 
-export default page
+export default page;
