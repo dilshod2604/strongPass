@@ -17,9 +17,12 @@ importers:
       react-dom:
         specifier: 19.0.0-rc-66855b96-20241106
         version: 19.0.0-rc-66855b96-20241106(react@19.0.0-rc-66855b96-20241106)
+<<<<<<< HEAD
+=======
       react-icons:
         specifier: ^5.3.0
         version: 5.3.0(react@19.0.0-rc-66855b96-20241106)
+>>>>>>> 39a0c5de8690ef7f6f7135fc53dbb87ddd8fe838
     devDependencies:
       '@types/node':
         specifier: ^20
@@ -597,11 +600,14 @@ packages:
     peerDependencies:
       react: 19.0.0-rc-66855b96-20241106
 
+<<<<<<< HEAD
+=======
   react-icons@5.3.0:
     resolution: {integrity: sha512-DnUk8aFbTyQPSkCfF8dbX6kQjXA9DktMeJqfjrg6cK9vwQVMxmcA3BfP4QoiztVmEHtwlTgLFsPuH2NskKT6eg==}
     peerDependencies:
       react: '*'
 
+>>>>>>> 39a0c5de8690ef7f6f7135fc53dbb87ddd8fe838
   react@19.0.0-rc-66855b96-20241106:
     resolution: {integrity: sha512-klH7xkT71SxRCx4hb1hly5FJB21Hz0ACyxbXYAECEqssUjtJeFUAaI2U1DgJAzkGEnvEm3DkxuBchMC/9K4ipg==}
     engines: {node: '>=0.10.0'}
@@ -1223,10 +1229,13 @@ snapshots:
       react: 19.0.0-rc-66855b96-20241106
       scheduler: 0.25.0-rc-66855b96-20241106
 
+<<<<<<< HEAD
+=======
   react-icons@5.3.0(react@19.0.0-rc-66855b96-20241106):
     dependencies:
       react: 19.0.0-rc-66855b96-20241106
 
+>>>>>>> 39a0c5de8690ef7f6f7135fc53dbb87ddd8fe838
   react@19.0.0-rc-66855b96-20241106: {}
 
   read-cache@1.0.0:
