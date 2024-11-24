@@ -24,7 +24,7 @@ const Header = () => {
 
           <div className="flex">
             <button
-              className="border-2 border-[#408077] bg-transparent text-[#408077] py-[10px] px-[30px] rounded-[13px]"
+              className="border-2 border-[#408077] bg-transparent text-[#408077] py-[10px] px-[30px] rounded-[13px] hover:bg-[#408077] hover:text-white transition-all"
             >
               Задать вопрос
             </button>

@@ -1,0 +1,103 @@
+import React from "react";
+import formMessageIcon from "../../../../assets/homePage/img/FormMessage-icon.svg";
+import formQuestionIcon from "../../../../assets/homePage/img/FormQuestion-icon.svg";
+import Image from "next/image";
+import rightArrow from "../../../../assets/header-logos/img/strongpass-right-logo.svg";
+
+const QuestionForm = () => {
+  return (
+    <section>
+      <div className="container">
+        {/* MAIN FORM  */}
+        <div className="flex justify-between w-full h-[650px] bg-[#408077] rounded-[24px] py-[60px] px-[60px] mt-[100px]">
+          {/* FORM LEFT  */}
+          <div>
+            <h2 className="text-[64px] font-[600] leading-[60px] text-white">
+              Остались <br /> вопросы?
+            </h2>
+            <p className="text-[18px] font-[400] mt-[30px] text-white">
+              Заполните форму и наши специалисты <br /> свяжутся с вами
+              в ближайшее время.
+            </p>
+
+            <div className="flex items-center gap-[8px] mt-[268px]">
+              <div className="w-[60px] h-[60px] bg-white rounded-[17px] flex items-center justify-center">
+                <Image
+                  src={formMessageIcon}
+                  alt="header-logo"
+                  width={20}
+                  height={15}
+                />
+              </div>
+              <div className="w-[60px] h-[60px] bg-white rounded-[17px] flex items-center justify-center">
+                <Image
+                  src={formQuestionIcon}
+                  alt="header-logo"
+                  width={20}
+                  height={15}
+                />
+              </div>
+            </div>
+          </div>
+          {/* FORM LEFT  */}
+
+          {/* FORM RIGHT  */}
+          <form className="bg-white rounded-[27px] shadow-lg pt-[40px] px-[28px] w-[477px] h-[533px]">
+            <div className="mb-[10px]">
+              <input
+                type="text"
+                placeholder="Фамилия Имя Отчество"
+                className="w-full border border-gray-300 rounded-[12px] px-4 py-3 focus:outline-none focus:ring-2 focus:ring-[#407F77]"
+              />
+            </div>
+            <div className="mb-4">
+              <input
+                type="email"
+                placeholder="Электронная почта"
+                className="w-full border border-gray-300 rounded-[12px] px-4 py-3 focus:outline-none focus:ring-2 focus:ring-[#407F77]"
+              />
+            </div>
+            <div className="mb-4">
+              <input
+                type="tel"
+                placeholder="Телефон"
+                className="w-full border border-gray-300 rounded-[12px] px-4 py-3 focus:outline-none focus:ring-2 focus:ring-[#407F77]"
+              />
+            </div>
+            <div className="mb-6">
+              <textarea
+                placeholder="Комментарий"
+                className="w-full h-[160px] border border-gray-300 rounded-[12px] px-4 py-3 focus:outline-none focus:ring-2 focus:ring-[#407F77] resize-none"
+              ></textarea>
+            </div>
+            <div className="flex items-center justify-between mt-[-15px]">
+              <button
+                type="submit"
+                className="flex items-center justify-center bg-transparent border border-[#407F77] text-[#407F77] rounded-lg px-6 py-[10px] hover:bg-[#407F77] hover:text-white transition-colors w-[360px]"
+              >
+                Отправить
+              </button>
+              <button className="bg-[#408077] w-[47px] h-[47px] flex items-center justify-center rounded-[13px]">
+                <Image
+                  src={rightArrow}
+                  alt="header-logo"
+                  width={14}
+                  height={14}
+                />
+              </button>
+            </div>
+            <p className="text-xs text-gray-500 mt-4 text-center">
+              Нажимая "отправить" я даю согласие на обработку моих персональных
+              данных для цели ответа на мою заявку.
+            </p>
+          </form>
+
+          {/* FORM RIGHT  */}
+        </div>
+        {/* MAIN FORM  */}
+      </div>
+    </section>
+  );
+};
+
+export default QuestionForm;
