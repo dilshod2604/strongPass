@@ -65,6 +65,7 @@ import image4 from "../assets/blogImages/image (4).png";
 import { StaticImageData } from "next/image";
 
 interface Iblog {
+  id:number
   title: string;
   date: string;
   description: string;
@@ -72,6 +73,7 @@ interface Iblog {
 }
 export const blog: Iblog[] = [
   {
+    id:1,
     title: "Создание легко запоминаемых и надежных паролей",
     date: " 20 сентября 2024",
     description:
@@ -79,6 +81,7 @@ export const blog: Iblog[] = [
     image: image1,
   },
   {
+    id:2,
     title:
       "Двухфакторная аутентификация (OTP) в OpenVPN с использованием FreeRADIUS и LDAP",
     date: " 20 сентября 2024",
@@ -87,6 +90,7 @@ export const blog: Iblog[] = [
     image: image2,
   },
   {
+    id:3,
     title:
       "Как создать слабый пароль или типовые шаблоны в паролях и как с ними бороться",
     date: " 20 сентября 2024",
@@ -95,6 +99,7 @@ export const blog: Iblog[] = [
     image: image3,
   },
   {
+    id:4,
     title:
       "Управление паролями локальных администраторов. Бесплатная замена Microsoft LAPS",
     date: " 20 сентября 2024",
@@ -103,6 +108,7 @@ export const blog: Iblog[] = [
     image: image4,
   },
   {
+    id:5,
     title:
       "Двухфакторная аутентификация (OTP) в OpenVPN с использованием FreeRADIUS и LDAP",
     date: " 20 сентября 2024",
@@ -111,6 +117,7 @@ export const blog: Iblog[] = [
     image: image1,
   },
   {
+    id:6,
     title:
       "Как создать слабый пароль или типовые шаблоны в паролях и как с ними бороться",
     date: " 20 сентября 2024",
@@ -119,6 +126,7 @@ export const blog: Iblog[] = [
     image: image2,
   },
   {
+    id:7,
     title: "Создание легко запоминаемых и надежных паролей",
     date: " 20 сентября 2024",
     description:
@@ -126,6 +134,7 @@ export const blog: Iblog[] = [
     image: image3,
   },
   {
+    id:8,
     title:
       "Двухфакторная аутентификация (OTP) в OpenVPN с использованием FreeRADIUS и LDAP",
     date: " 20 сентября 2024",

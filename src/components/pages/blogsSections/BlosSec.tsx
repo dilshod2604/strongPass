@@ -9,7 +9,7 @@ const BlosSec = () => {
     <section>
       <div className="container">
         <div className="flex flex-col items-center gap-y-[60px]">
-          <h1 className="text-[72px] font-bold flex items-center  w-full justify-center text-[#262F33]">
+          <h1 className="text-[72px] font-semibold flex items-center  w-full justify-center text-[#262F33]">
             Стаьи
           </h1>
           <div className="grid grid-cols-2 gap-x-4  max-md:grid-cols-1">
@@ -36,7 +36,7 @@ const BlosSec = () => {
                     {item.description}
                   </p>
                   <Link
-                    href="#"
+                    href="/article/2"
                     className="text-[18px] font-semibold flex items-center gap-x-3 text-[#408077] underline"
                   >
                     Читать статью
