@@ -1,11 +1,11 @@
-import Blogs from "@/components/pages/Blogs";
+import BlogId from "@/components/pages/BlogId";
 import React from "react";
 
 const page = () => {
   return (
-    <>
-      <Blogs />
-    </>
+    <div>
+      <BlogId />
+    </div>
   );
 };
 
