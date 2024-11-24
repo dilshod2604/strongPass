@@ -1,6 +1,7 @@
 import React from 'react';
 import FooterLogo from "../../assets/footer-logos/img/Footer-logo.svg";
 import Image from "next/image";
+import Link from 'next/link';
 
 const Footer = () => {
   return (
@@ -28,11 +29,21 @@ const Footer = () => {
 
           {/* ROW2  */}
           <div className='flex flex-col gap-[6px]'>
+            <Link href='/download'>
             <p className='text-[16px] font-[600] text-[#262F33]'>Скачать</p>
+            </Link>
+            <Link href='/buy'>
             <p className='text-[16px] font-[600] text-[#262F33]'>Купить</p>
+            </Link>
+            <Link href='/article'>
             <p className='text-[16px] font-[600] text-[#262F33]'>Статьи</p>
+            </Link>
+            <Link href='/documentation'>
             <p className='text-[16px] font-[600] text-[#262F33]'>Документация</p>
+            </Link>
+            <Link href='/contacts'>
             <p className='text-[16px] font-[600] text-[#262F33]'>Контакты</p>
+            </Link>
           </div>
           {/* ROW2  */}
 
