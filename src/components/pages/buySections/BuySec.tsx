@@ -1,6 +1,7 @@
 import BuyForm from "@/components/Layout/ui/buy/BuyForm";
 import Link from "next/link";
 import React from "react";
+import CommonQuestions from "./CommonQuestions";
 
 const BuySec = () => {
   return (
@@ -22,6 +23,7 @@ const BuySec = () => {
             </p>
           </div>
           <BuyForm />
+          <CommonQuestions />   
         </div>
       </div>
     </section>
