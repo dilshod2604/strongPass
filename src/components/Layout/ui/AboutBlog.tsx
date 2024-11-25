@@ -8,6 +8,10 @@ import image10 from "../../../assets/blogImages/blogId/image 10.png";
 import ArticleBlock from "./articleBlock/ArticleBlock";
 
 const AboutBlog = () => {
+
+  const text = `ldapsearch -h localhost -p 389 -D cn="Directory Manager" -W -b
+  ou=people,dc=[ваш_домен],dc=[ваш_домен] "uid=*" uid | grep uid: | wc -l`;
+  
   return (
     <div className="flex  gap-x-[30px] max-md:flex-col gap-y-[30px]">
       <div className="flex flex-col gap-y-[26px] ">
@@ -56,7 +60,7 @@ const AboutBlog = () => {
             потребность укрепления моральных ценностей.
           </p>
         </div>
-        <CopyText />
+        <CopyText  copyText={text}/>
         <div className="flex flex-col gap-y-4">
           <h1 className="text-lg font-semibold text-[#262F33] ">
             Очевидцы сообщают, что слышали шёпот бессменных лидеров
