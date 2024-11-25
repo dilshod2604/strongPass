@@ -18,7 +18,6 @@ const Header = () => {
                 height={60}
               />
             </Link>
-
             <Nav />
           </div>
 

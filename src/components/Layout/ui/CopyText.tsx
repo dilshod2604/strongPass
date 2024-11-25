@@ -2,8 +2,15 @@
 import { message } from "antd";
 import React, { useState } from "react";
 import { BiSolidCopy } from "react-icons/bi";
+import { twMerge } from "tailwind-merge";
 
-const CopyText = ({ copyText }: { copyText: string }) => {
+const CopyText = ({
+  copyText,
+  className,
+}: {
+  copyText: string;
+  className?: string;
+}) => {
   const handleCopy = async () => {
     try {
       await navigator.clipboard.writeText(copyText);
@@ -14,7 +21,12 @@ const CopyText = ({ copyText }: { copyText: string }) => {
   };
 
   return (
-    <div className="flex flex-col gap-y-4 px-[24px] py-[20px] rounded-lg bg-[#F2F5F4]">
+    <div
+      className={twMerge(
+        "flex flex-col gap-y-4 px-[24px] py-[20px] rounded-lg bg-[#F2F5F4]",
+        className
+      )}
+    >
       <p className="text-lg text-[#262F33] font-normal">{copyText}</p>
       <BiSolidCopy
         size={16}
