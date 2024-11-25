@@ -5,12 +5,12 @@ const DocSec = () => {
     <section>
       <div className="container">
         <div className="flex justify-center">
-          <div className="flex flex-col items-center  max-w-[780px] gap-y-[60px]">
-            <h1 className="text-[72px] font-semibold text-center text-[#262F33] leading-none">
+          <div className="flex flex-col items-center  max-w-[780px] gap-y-[60px] p-4">
+            <h1 className="text-[72px] font-semibold text-center text-[#262F33] leading-none max-lg:text-[52px] max-md:text-[42px] max-md:text-[32px]">
               Политика приватности
             </h1>
             <div className="flex flex-col gap-y-3">
-              <p className="text-[#262F33] text-[18ox]  font-normal">
+              <p className="text-[#262F33] text-[18px]  font-normal">
                 Но внедрение современных методик создаёт предпосылки для
                 кластеризации усилий. Ясность нашей позиции очевидна:
                 высокотехнологичная концепция общественного уклада говорит о
@@ -20,7 +20,7 @@ const DocSec = () => {
                 экономическая повестка сегодняшнего дня предопределяет высокую
                 востребованность глубокомысленных рассуждений.
               </p>
-              <p className="text-[#262F33] text-[18ox]  font-normal">
+              <p className="text-[#262F33] text-[18px]  font-normal">
                 С учётом сложившейся международной обстановки, укрепление и
                 развитие внутренней структуры прекрасно подходит для реализации
                 стандартных подходов. Сложно сказать, почему независимые
@@ -37,7 +37,7 @@ const DocSec = () => {
                 сценарии поведения пользователей будут заблокированы в рамках
                 своих собственных рациональных ограничений!
               </p>
-              <p className="text-[#262F33] text-[18ox]  font-normal">
+              <p className="text-[#262F33] text-[18px]  font-normal">
                 Господа, высококачественный прототип будущего проекта требует
                 анализа направлений прогрессивного развития. А ещё тщательные
                 исследования конкурентов представляют собой не что иное, как

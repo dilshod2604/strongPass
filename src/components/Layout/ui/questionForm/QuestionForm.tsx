@@ -9,18 +9,18 @@ const QuestionForm = () => {
     <section>
       <div className="container">
         {/* MAIN FORM  */}
-        <div className="flex justify-between w-full h-[650px] bg-[#408077] rounded-[24px] py-[60px] px-[60px] mt-[100px]">
+        <div className="flex lg: gap-x-[50px] justify-between w-full  bg-[#408077] rounded-[24px] py-[60px] px-[60px] mt-[100px] max-lg:flex-col gap-y-[40px] ">
           {/* FORM LEFT  */}
           <div>
-            <h2 className="text-[64px] font-[600] leading-[60px] text-white">
-              Остались <br /> вопросы?
+            <h2 className="text-[64px] font-[600] leading-[60px] text-white max-lg:text-[50px] max-md:text-[40px] max-sm:text-[30px] ">
+              Остались вопросы?
             </h2>
             <p className="text-[18px] font-[400] mt-[30px] text-white">
               Заполните форму и наши специалисты <br /> свяжутся с вами
               в ближайшее время.
             </p>
 
-            <div className="flex items-center gap-[8px] mt-[268px]">
+            <div className="flex items-center gap-[8px] mt-[268px] max-lg:mt-[40px]">
               <div className="w-[60px] h-[60px] bg-white rounded-[17px] flex items-center justify-center">
                 <Image
                   src={formMessageIcon}
@@ -42,7 +42,7 @@ const QuestionForm = () => {
           {/* FORM LEFT  */}
 
           {/* FORM RIGHT  */}
-          <form className="bg-white rounded-[27px] shadow-lg pt-[40px] px-[28px] w-[477px] h-[533px]">
+          <form className="bg-white rounded-[27px] shadow-lg pt-[40px] px-[28px] py-[40px] lg:max-w-[580px] ">
             <div className="mb-[10px]">
               <input
                 type="text"
@@ -73,7 +73,7 @@ const QuestionForm = () => {
             <div className="flex items-center justify-between mt-[-15px]">
               <button
                 type="submit"
-                className="flex items-center justify-center bg-transparent border border-[#407F77] text-[#407F77] rounded-lg px-6 py-[10px] hover:bg-[#407F77] hover:text-white transition-colors w-[360px]"
+                className="flex items-center justify-center bg-transparent border border-[#407F77] text-[#407F77] rounded-lg px-6 py-[10px] hover:bg-[#407F77] hover:text-white transition-colors w-full"
               >
                 Отправить
               </button>

@@ -3,13 +3,16 @@ import Nav from "./ui/Nav";
 import headerLogo from "../../assets/header-logos/img/strongpass-logo.svg";
 import rightArrow from "../../assets/header-logos/img/strongpass-right-logo.svg";
 import Link from "next/link";
+import BurgerButton from "./ui/BurgerButton/BurgerButton";
+import messageIcon from "../../assets/header-logos/img/message.svg";
 
 const Header = () => {
   return (
     <header>
       <div className="container">
         <div className="flex items-center justify-between py-[27px]">
-          <div className="flex items-center gap-[80px]">
+          <div className="flex items-center gap-[80px] ">
+            <BurgerButton />
             <Link href="/">
               <Image
                 src={headerLogo}
@@ -21,7 +24,7 @@ const Header = () => {
             <Nav />
           </div>
 
-          <div className="flex">
+          <div className="flex max-sm:hidden">
             <button className="border-2 border-[#408077] bg-transparent text-[#408077] py-[10px] px-[30px] rounded-[13px] hover:bg-[#408077] hover:text-white transition-all duration-500">
               Задать вопрос
             </button>
@@ -33,6 +36,9 @@ const Header = () => {
                 height={14}
               />
             </button>
+          </div>
+          <div className="hidden items-center justify-center w-[46px] h-[46px] rounded-lg bg-[#F2F5F4] max-sm:flex ">
+            <Image src={messageIcon} alt="message" width={18} height={13.5} />
           </div>
         </div>
       </div>
