@@ -1,9 +1,12 @@
-import React from 'react'
+import React from "react";
+import DocSec from "./documentationsSections/DocSec";
 
 const Documentation = () => {
   return (
-    <>Documentation</>
-  )
-}
+    <>
+      <DocSec />
+    </>
+  );
+};
 
-export default Documentation
+export default Documentation;

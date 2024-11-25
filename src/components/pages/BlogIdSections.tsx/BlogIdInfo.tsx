@@ -2,6 +2,7 @@ import React from "react";
 import Image from "next/image";
 import image from "../../../assets/blogImages/blogId/image1.png";
 import AboutBlog from "@/components/Layout/ui/AboutBlog";
+import ArticleBlock from "@/components/Layout/ui/articleBlock/ArticleBlock";
 
 const BlogIdInfo = () => {
   return (
@@ -22,7 +23,8 @@ const BlogIdInfo = () => {
             height={568}
             className="rounded-[36px]"
           />
-          <AboutBlog /> 
+          <AboutBlog />
+          <ArticleBlock />
         </div>
       </div>
     </section>

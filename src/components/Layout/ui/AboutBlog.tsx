@@ -5,6 +5,7 @@ import Link from "next/link";
 // import { GoArrowRight } from "react-icons/go";
 import comaIcon from "../../../assets/blogImages/blogId/coma.svg";
 import image10 from "../../../assets/blogImages/blogId/image 10.png";
+import ArticleBlock from "./articleBlock/ArticleBlock";
 
 const AboutBlog = () => {
   return (

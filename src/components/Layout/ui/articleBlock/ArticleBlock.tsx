@@ -5,6 +5,7 @@ import artArrowRight from "../../../../assets/homePage/img/Article-arrow-right.s
 import image1 from "../../../../assets/homePage/img/Article-image1.svg";
 import image2 from "../../../../assets/homePage/img/Article-image2.svg";
 import Image from "next/image";
+import Link from "next/link";
 
 const ArticleBlock = () => {
   return (
@@ -17,7 +18,7 @@ const ArticleBlock = () => {
             <h1 className="text-[64px] font-[600] text-[#262F33]">Статьи</h1>
 
             <div className="flex items-center gap-[10px]">
-              <button className="text-[18px] font-[500] text-[#408077] border-2 border-[#40807776] bg-transparent rounded-[9px] px-[30px] py-[14px]">
+              <button className="text-[18px] font-[500] text-[#408077] border-2 border-[#40807776] bg-transparent rounded-[9px] px-[30px] py-[14px]  hover:bg-[#408077] hover:text-white transition-all duration-500">
                 Смотреть все
               </button>
               <button className="border-2 border-[#40807776] bg-transparent rounded-[9px] px-[17px] py-[16px]">
@@ -62,7 +63,10 @@ const ArticleBlock = () => {
                   Сегодня исследовательская группа Specops публикует <br />{" "}
                   новые данные о паролях VPN, украденных вредоносным
                 </p>
-                <button className="text-[18px] font-[400] text-[#408077] flex items-center gap-[11px] mt-[27px]">
+                <Link
+                  href="/article/2"
+                  className="text-[18px] font-[400] text-[#408077] flex items-center gap-[11px] mt-[27px]"
+                >
                   Читать статью{" "}
                   <Image
                     src={artArrowRight}
@@ -70,7 +74,7 @@ const ArticleBlock = () => {
                     width={16}
                     height={10}
                   />
-                </button>
+                </Link>
               </div>
             </div>
             {/* BLOCK  */}
@@ -96,7 +100,10 @@ const ArticleBlock = () => {
                   Сегодня исследовательская группа Specops публикует <br />{" "}
                   новые данные о паролях VPN, украденных вредоносным
                 </p>
-                <button className="text-[18px] font-[400] text-[#408077] flex items-center gap-[11px] mt-[27px]">
+                <Link
+                  className="text-[18px] font-[400] text-[#408077] flex items-center gap-[11px] mt-[27px]"
+                  href="/article/2"
+                >
                   Читать статью{" "}
                   <Image
                     src={artArrowRight}
@@ -104,7 +111,7 @@ const ArticleBlock = () => {
                     width={16}
                     height={10}
                   />
-                </button>
+                </Link>
               </div>
             </div>
             {/* BLOCK  */}
