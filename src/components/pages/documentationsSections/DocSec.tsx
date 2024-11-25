@@ -6,7 +6,7 @@ const DocSec = () => {
       <div className="container">
         <div className="flex justify-center">
           <div className="flex flex-col items-center  max-w-[780px] gap-y-[60px] p-4">
-            <h1 className="text-[72px] font-semibold text-center text-[#262F33] leading-none max-lg:text-[52px] max-md:text-[42px] max-md:text-[32px]">
+            <h1 className="text-[72px] font-semibold text-center text-[#262F33] leading-none max-lg:text-[52px] max-md:text-[42px] max-sm:text-[32px]">
               Политика приватности
             </h1>
             <div className="flex flex-col gap-y-3">
