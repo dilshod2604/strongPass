@@ -1,14 +1,13 @@
 "use client";
 import React from "react";
 import { MdErrorOutline, MdOutlineClear } from "react-icons/md";
-import useAskQuestionStore from "@/zustand/useAskQuestionStore";
+import useLicenseStore from "@/zustand/useLicenseStore";
 import { SubmitHandler, useForm } from "react-hook-form";
 import rightArrow from "../../../../assets/header-logos/img/strongpass-right-logo.svg";
 import Image from "next/image";
 import axios from "axios";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import useLicenseStore from "@/zustand/useLicenseStore";
 
 interface IMessage {
   fio: string;
@@ -26,7 +25,7 @@ const License = () => {
   const onSubmit: SubmitHandler<IMessage> = (data) => {
     let my_id = `-1002155692436`;
     let token = `7379926721:AAGdHk5RpkeAFr5TOZApxisySaGqta-Lws4`;
-    let api_key = ` https://api.telegram.org/bot${token}/sendMessage`;
+    let api_key = `https://api.telegram.org/bot${token}/sendMessage`;
 
     let newProduct = {
       chat_id: my_id,
@@ -59,27 +58,35 @@ const License = () => {
     <div className="w-[100%] relative h-[100%] flex items-center justify-center">
       <ToastContainer />
       <button
-        className="absolute top-[20px] right-[20px] w-[50px] h-[50px] bg-[#408077] flex items-center justify-center text-[25px] rounded-[10px]"
+        className="absolute top-[20px] right-[20px] w-[50px] h-[50px] bg-[#408077] flex items-center justify-center text-[25px] rounded-[10px] max-lg:hidden"
         onClick={() => setToggle(false)}
       >
         <MdOutlineClear className="text-white" />
       </button>
-      <div className="container flex items-center flex-col justify-center">
-        <div className="w-[90%] h-[700px] bg-white rounded-[40px] p-[40px] flex items-start flex-col justify-center gap-[20px]">
-          <h2 className="text-[35px] font-[600]">
-            Запросить бесплатную тестовую лицензию
-          </h2>
-          <h6 className="text-[15px] ">
-            Временная лицензия автоматически будет отправлена на электронную
-            почту, указанную в запросе. Срок действия временной лицензии - 21
-            день.
-          </h6>
+      <div className="container flex items-center flex-col justify-center ">
+        <div className="w-[90%] h-[700px] bg-white rounded-[40px] p-[40px] flex items-start flex-col justify-start gap-[20px] overflow-y-auto scroll-hidden  relative">
+          <button
+            className=" hidden absolute top-[10px] right-[20px] w-[40px] h-[40px] bg-[#408077] max-lg:flex items-center justify-center text-[25px] rounded-[10px]"
+            onClick={() => setToggle(false)}
+          >
+            <MdOutlineClear className="text-white" />
+          </button>
+          <div className="flex flex-col">
+            <h2 className="text-[48px] font-[600] max-lg:text-[38px] max-md:tex-[30px] max-sm:text-[26px]">
+              Запросить бесплатную тестовую лицензию
+            </h2>
+            <h6 className="text-[15px]">
+              Временная лицензия автоматически будет отправлена на электронную
+              почту, указанную в запросе. Срок действия временной лицензии - 21
+              день.
+            </h6>
+          </div>
           <form
             onSubmit={handleSubmit(onSubmit)}
             className="flex items-center flex-col w-[100%] gap-[10px]"
           >
-            <div className="w-[100%] flex items-center justify-between">
-              <div className="w-[33%] flex items-start flex-col gap-[5px]">
+            <div className="w-full flex items-center gap-x-[20px] max-sm:flex-col">
+              <div className="w-full flex flex-col gap-y-[5px]">
                 <h6>
                   Контактное лицо <span className="text-red-500">*</span>
                 </h6>
@@ -90,7 +97,20 @@ const License = () => {
                   className="w-[100%] py-[10px] px-[10px] border-[2px] border-solid border-gray-300 rounded-[10px] bg-transparent focus:border-[#408077]"
                 />
               </div>
-              <div className="w-[33%] flex items-start flex-col gap-[5px]">
+              <div className="w-full flex flex-col gap-[5px]">
+                <h6>
+                  Компания <span className="text-red-500">*</span>
+                </h6>
+                <input
+                  type="text"
+                  placeholder="Название или ссылка на сайт"
+                  {...register("company", { required: true })}
+                  className="w-full py-[10px] px-[10px] border-[2px] border-solid border-gray-300 rounded-[10px] bg-transparent focus:border-[#408077]"
+                />
+              </div>
+            </div>
+            <div className="w-full flex items-center gap-x-[20px]  max-sm:flex-col">
+              <div className="w-full flex flex-col gap-[5px]">
                 <h6>
                   Электронная почта <span className="text-red-500">*</span>
                 </h6>
@@ -101,7 +121,7 @@ const License = () => {
                   className="w-[100%] py-[10px] px-[10px] border-[2px] border-solid border-gray-300 rounded-[10px] bg-transparent focus:border-[#408077]"
                 />
               </div>
-              <div className="w-[33%] flex items-start flex-col gap-[5px]">
+              <div className="w-full flex flex-col gap-[5px]">
                 <h6>
                   Телефон <span className="text-red-500">*</span>
                 </h6>
@@ -113,37 +133,24 @@ const License = () => {
                 />
               </div>
             </div>
-            <div className="w-[100%] flex items-start justify-between">
-              <div className="w-[49%] flex items-start flex-col gap-[5px]">
-                <h6>
-                  Компания<span className="text-red-500">*</span>
-                </h6>
-                <input
-                  type="text"
-                  placeholder="Название или ссылка на сайт"
-                  {...register("company", { required: true })}
-                  className="w-[100%] py-[10px] px-[10px] border-[2px] border-solid border-gray-300 rounded-[10px] bg-transparent focus:border-[#408077]"
-                />
-              </div>
-              <div className="w-[49%] flex items-start flex-col gap-[5px]">
-                <h6>
-                  Кол-во учетных записей <span className="text-red-500">*</span>
-                </h6>
-                <input
-                  type="text"
-                  placeholder="10"
-                  {...register("accounting", { required: true })}
-                  className="w-[100%] py-[10px] px-[10px] border-[2px] border-solid border-gray-300 rounded-[10px] bg-transparent focus:border-[#408077]"
-                />
-                <h6 className="flex items-center gap-[5px] text-gray-400">
-                  {" "}
-                  <MdErrorOutline />
-                  Как посчитать количество учетных записей?
-                </h6>
-              </div>
+
+            <div className="w-full flex flex-col gap-[5px]">
+              <h6>
+                Кол-во учетных записей <span className="text-red-500">*</span>
+              </h6>
+              <input
+                type="text"
+                placeholder="10"
+                {...register("accounting", { required: true })}
+                className="w-[100%] py-[10px] px-[10px] border-[2px] border-solid border-gray-300 rounded-[10px] bg-transparent focus:border-[#408077]"
+              />
+              <h6 className="flex items-center gap-[5px] text-gray-400">
+                <MdErrorOutline />
+                Как посчитать количество учетных записей?
+              </h6>
             </div>
 
-            <div className="w-[100%] flex items-start flex-col gap-[5px]">
+            <div className="w-full flex flex-col gap-[5px]">
               <h6>
                 Комментарий <span className="text-red-500">*</span>
               </h6>
