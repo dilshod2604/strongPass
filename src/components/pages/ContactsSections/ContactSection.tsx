@@ -88,7 +88,7 @@ const ContactSection = () => {
             </h4>
 
             <form
-              className="bg-white pt-[40px] px-[28px] w-[570px] h-[533px]"
+              className="bg-white pt-[40px] p-[28px] max-w-[570px]  rounded-xl"
               onSubmit={handleSubmit(onSubmit)}
             >
               <div className="mb-[10px]">

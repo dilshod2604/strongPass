@@ -29,21 +29,21 @@ const AboutPassword = () => {
               className="max-lg:w-full"
             />
           </div>
-          <div className="flex items-center gap-x-[20px] mt-[57px] overflow-x-auto scroll-hidden snap-x">
+          <div className="flex items-center gap-x-[20px] mt-[57px] overflow-x-auto scroll-hidden">
             {password.map((item, index) => (
               <div
                 key={index}
-                className="w-[380px] h-[320px] flex flex-col gap-y-[71px]  border border-solid border-[#00000025] rounded-[18px] p-[35px] snap-center  "
+                className=" w-[380px] h-[320px] flex flex-col justify-between border border-solid border-[#00000025] rounded-[18px] p-[36px] max-md:w-[360px] max-md:h-[320px] max-md:p-[30px] max-sm:w-[300px] max-sm:h-[300px] max-sm:p-[25px] "
               >
-                <div className="flex flex-col gap-y-[10px] w-[308px]">
-                  <h2 className="text-[30px] font-[500] text-[#262F33] ">
+                <div className="flex flex-col gap-y-[10px] w-[308px] max-sm:w-[250px]">
+                  <h2 className="text-[32px] font-semibold text-[#262F33] max-sm:text-[22px]">
                     {item.title}
                   </h2>
-                  <p className="text-[#262F33] text-[17px] font-[400] mt-[14px]">
+                  <p className="text-[#262F33] text-[18px] font-normal max-sm:text-[16px]">
                     {item.description}
                   </p>
                 </div>
-                <div className="flex items-center justify-between w-[308px]">
+                <div className="flex items-center justify-between">
                   <Image src={dotted} alt="header-logo" width={24} height={6} />
                   <p className="text-[18px] font-[600] text-[#408077]">001</p>
                 </div>
