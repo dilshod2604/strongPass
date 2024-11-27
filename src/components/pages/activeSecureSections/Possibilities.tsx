@@ -64,7 +64,9 @@ const Possibilities = () => {
       <div className="container">
         <div className="flex items-center flex-col justify-center w-[100%] gap-[40px]">
           <div className="flex items-center flex-col gap-[10px]">
-            <h1 className="text-[60px] font-[600]">Возможности</h1>
+            <h1 className="text-[60px] font-[600] max-lg:text-[50px] max-md:text-[40px] max-sm:text-[30px]">
+              Возможности
+            </h1>
             <h6 className="text-[20px]">
               Продукт лицензируется по количеству защищаемых учетных записей в
               домене.

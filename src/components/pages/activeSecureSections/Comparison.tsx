@@ -39,7 +39,7 @@ const Comparison = () => {
   return (
     <div>
       <div className="container">
-        <div className="w-[100%] h-[800px] rounded-[40px] bg-[#F2F5F4] flex items-center flex-col justify-center p-[40px] gap-[40px] overflow-x-auto overflow-y-hidden scroll-hidden">
+        <div className="w-[100%] h-[830px] rounded-[40px] bg-[#F2F5F4] flex items-center flex-col justify-center p-[40px] gap-[40px] overflow-x-auto overflow-y-hidden scroll-hidden">
           <h1 className="text-[60px] font-[600] w-[70%] text-center leading-2 max-lg:text-[50px] max-md:text-[40px]">
             Сравнение с групповыми политиками
           </h1>

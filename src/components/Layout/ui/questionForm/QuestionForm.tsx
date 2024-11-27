@@ -88,7 +88,7 @@ const QuestionForm = () => {
 
           {/* FORM RIGHT  */}
           <form
-            className="bg-white rounded-[27px] shadow-lg p-[36px] lg:w-[477px] max-lg:w-full"
+            className="bg-white rounded-[27px] shadow-lg p-[36px] lg:w-[477px] max-lg:w-full max-sm:p-[10px]"
             onSubmit={handleSubmit(onSubmit)}
           >
             <div className="mb-[10px]">

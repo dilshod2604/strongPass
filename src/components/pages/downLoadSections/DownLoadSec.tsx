@@ -12,7 +12,7 @@ const DownLoadSec = () => {
       <div className="container">
         <div className="flex flex-col">
           <div className="w-full flex flex-col items-center justify-center gap-y-[40px]">
-            <h1 className="text-black text-[72px] font-semibold ">Скачать</h1>
+            <h1 className="text-black text-[72px] font-semibold  max-lg:text-[62px] max-md:text-[52px] max-sm:text-[42px]">Скачать</h1>
             <p className=" text-[18px] font-normal text-center max-w-[768px] text-[#262F33] ">
               Если у вас нет купленной лицензии Strongpass, пожалуйста{" "}
               <Link href="#" className="text-[#408077] underline">
