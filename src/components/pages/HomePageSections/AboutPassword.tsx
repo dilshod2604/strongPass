@@ -1,0 +1,59 @@
+import React from "react";
+import aboutPassword from "../../../assets/homePage/img/AboutPhotoPassword.svg";
+import Image from "next/image";
+import dotted from "../../../assets/homePage/img/dotted.svg";
+import { password } from "@/constants/links";
+
+const AboutPassword = () => {
+  return (
+    <section>
+      <div className="container">
+        <div className="mt-[100px] w-[100%]  bg-[#F2F5F4] rounded-[24px] px-[50px] py-[60px]">
+          {/* BLOCK1  */}
+          <div className="flex items-center justify-between max-lg:flex-col gap-y-[48px]">
+            <p className="text-[28px] font-[400] text-[#262F33] max-w-[680px] max-sm:text-[18px]">
+              Использование слабых и скомпрометированных паролей - один из
+              основных способов проникновения злоумышленников в инфраструктуру.
+              Внедрение надежной парольной политики и безопасной работы
+              с паролями снижает вероятность взлома на 60% 
+              <span className="text-[#408077] underline">
+                по данным Лаборатории Касперского.
+              </span>
+            </p>
+
+            <Image
+              src={aboutPassword}
+              alt="header-logo"
+              width={380}
+              height={400}
+              className="max-lg:w-full"
+            />
+          </div>
+          <div className="flex items-center gap-x-[20px] mt-[57px] overflow-x-auto scroll-hidden snap-x">
+            {password.map((item, index) => (
+              <div
+                key={index}
+                className="w-[380px] h-[320px] flex flex-col gap-y-[71px]  border border-solid border-[#00000025] rounded-[18px] p-[35px] snap-center  "
+              >
+                <div className="flex flex-col gap-y-[10px] w-[308px]">
+                  <h2 className="text-[30px] font-[500] text-[#262F33] ">
+                    {item.title}
+                  </h2>
+                  <p className="text-[#262F33] text-[17px] font-[400] mt-[14px]">
+                    {item.description}
+                  </p>
+                </div>
+                <div className="flex items-center justify-between w-[308px]">
+                  <Image src={dotted} alt="header-logo" width={24} height={6} />
+                  <p className="text-[18px] font-[600] text-[#408077]">001</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default AboutPassword;
