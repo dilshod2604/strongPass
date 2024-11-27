@@ -64,6 +64,7 @@ const ArticleBlock = () => {
                   alt="image"
                   width={580}
                   height={280}
+                  loading="lazy"
                   className="object-cover w-full h-full rounded-[36px]"
                 />
                 <div className="w-[580px] max-sm:w-[320px] flex flex-col p-[36px] rounded-[36px] bg-[#F2F5F4] gap-y-3 relative bottom-[50px]">

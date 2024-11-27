@@ -37,7 +37,7 @@ const SelfCheckWelcome = () => {
               </div>
             </div>
             <div className="relative ">
-              <Image src={selfImg} alt="" className="rounded-[40px]" />
+              <Image src={selfImg} alt="" className="rounded-[40px] " loading="lazy" />
               <Image src={sircle} alt="" className="absolute top-0 left-0 " />
               <Image
                 src={selfIcon}

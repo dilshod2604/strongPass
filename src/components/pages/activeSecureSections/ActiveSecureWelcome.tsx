@@ -41,7 +41,7 @@ const ActiveSecureWelcome = () => {
               </div>
             </div>
             <div className="relative ">
-              <Image src={secureImg} alt="" className="rounded-[40px]" />
+              <Image src={secureImg} alt="" className="rounded-[40px]" loading="lazy" />
               <Image
                 src={secureKey}
                 alt="secureKey"

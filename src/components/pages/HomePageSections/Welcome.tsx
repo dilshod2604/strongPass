@@ -38,6 +38,7 @@ const Welcome = () => {
               alt="header-logo"
               width={1200}
               height={560}
+              loading="lazy"
             />
             <div className="flex p-4 items-center gap-x-2 rounded-r-[28px] rounded-tl-[28px] absolute bottom-[20px] bg-white">
               <span className="w-[64px] h-[64px] rounded-2xl bg-[#408077] flex items-center justify-center">

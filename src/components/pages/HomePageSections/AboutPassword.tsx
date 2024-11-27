@@ -27,6 +27,7 @@ const AboutPassword = () => {
               width={380}
               height={400}
               className="max-lg:w-full"
+              loading="lazy"
             />
           </div>
           <div className="flex items-center gap-x-[20px] mt-[57px] overflow-x-auto scroll-hidden">

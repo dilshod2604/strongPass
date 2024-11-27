@@ -36,8 +36,9 @@ const AlmetibinWelcome = () => {
               src={almetibinImg}
               alt=""
               className="rounded-[40px]"
-              width={380}
+              width={350}
               height={540}
+              loading="lazy"
             />
             <Image src={circles} alt="" className="absolute top-0 left-0 " />
             <Image

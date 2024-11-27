@@ -56,7 +56,7 @@ const Strongpass = () => {
                 но при этом быть легко угадываемыми или часто используемыми.
               </p>
             </div>
-            <Image src={strongpassImg3} alt="" width={400} />
+            <Image src={strongpassImg3} alt="" width={400} loading="lazy" />
           </div>
         </div>
       </div>

@@ -99,7 +99,8 @@ const AlmetibinPossibilities = () => {
               <Image
                 src={passwordRedImg}
                 alt=""
-                className="absolute top-[-20px]"
+                loading="lazy"
+                className="absolute top-[-20px] "
               />
               <div className="flex items-center flex-col gap-[10px]">
                 <h2 className="text-[40px] ">Бесплатная</h2>
