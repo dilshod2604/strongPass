@@ -44,10 +44,10 @@ const Nav = () => {
               {isDropdownOpen ? <FiChevronUp /> : <FiChevronDown />}
             </button>
             {isDropdownOpen && (
-              <ul className="dropdown-menu lg:absolute bg-white lg:shadow-lg  mt-2 lg:border rounded-[20px] lg:min-w-[220px] max-lg:w-full max-lg:left-0  ">
+              <ul className="dropdown-menu lg:absolute bg-white mt-2  rounded-b-[10px] lg:min-w-[220px] max-lg:w-full max-lg:left-0  ">
                 {trioLinks.map((el, idx) => (
                   <li
-                    className="lg:border-b border-gray-300 py-2 p-[10px] object-cover cursor-pointer max-lg:text-center "
+                    className="lg:border-b py-2 p-[10px] object-cover cursor-pointer max-lg:text-center "
                     onClick={() => {
                       setIsDropdownOpen(false);
                       setIsOpen(false);
