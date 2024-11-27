@@ -2,7 +2,6 @@
 
 import { items } from "@/constants/links";
 import { Collapse } from "antd";
-import { PanelProps } from "antd/es/splitter/interface";
 import React from "react";
 import { RiArrowDownSLine, RiArrowRightSLine } from "react-icons/ri";
 

@@ -54,7 +54,7 @@ const QuestionForm = () => {
       <ToastContainer />
       <div className="container">
         {/* MAIN FORM  */}
-        <div className="flex lg: gap-x-[50px] justify-between w-full  bg-[#408077] rounded-[24px] py-[60px] px-[60px] mt-[100px] max-lg:flex-col gap-y-[40px] ">
+        <div className="flex lg: gap-x-[50px] justify-between w-full  bg-[#408077] rounded-[24px] p-[60px] mt-[100px] max-lg:flex-col gap-y-[40px] max-sm:p-[30px] ">
           {/* FORM LEFT  */}
           <div>
             <h2 className="text-[64px] font-[600] leading-[60px] text-white max-lg:text-[50px] max-md:text-[40px] max-sm:text-[30px] ">
@@ -88,7 +88,7 @@ const QuestionForm = () => {
 
           {/* FORM RIGHT  */}
           <form
-            className="bg-white rounded-[27px] shadow-lg p-[36px] lg:w-[477px] max-lg:w-full max-sm:p-[10px]"
+            className="bg-white rounded-[27px] shadow-lg p-[36px] lg:w-[477px] max-lg:w-full max-sm:p-[20px]max-sm:rounded-[20px]"
             onSubmit={handleSubmit(onSubmit)}
           >
             <div className="mb-[10px]">

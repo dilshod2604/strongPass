@@ -12,7 +12,7 @@ import useLicenseStore from "@/zustand/useLicenseStore";
 import License from "@/components/Layout/ui/license/License";
 
 const ActiveSecureWelcome = () => {
-  const { toggle, isToggled, setToggle } = useLicenseStore();
+  const {  isToggled, setToggle } = useLicenseStore();
   return (
     <>
       <div className="container">

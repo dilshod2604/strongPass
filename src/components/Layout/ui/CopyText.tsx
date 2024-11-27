@@ -1,6 +1,6 @@
 "use client";
 import { message } from "antd";
-import React, { useState } from "react";
+import React from "react";
 import { BiSolidCopy } from "react-icons/bi";
 import { twMerge } from "tailwind-merge";
 
