@@ -12,10 +12,10 @@ import useLicenseStore from "@/zustand/useLicenseStore";
 import License from "@/components/Layout/ui/license/License";
 
 const ActiveSecureWelcome = () => {
-  const {  isToggled, setToggle } = useLicenseStore();
+  const { isToggled, setToggle } = useLicenseStore();
   return (
     <>
-      <div className="container">
+      <div className="container p-5">
         <div className=" flex items-center flex-col gap-[50px]">
           <div className="flex items-center justify-between w-full max-lg:flex-col-reverse   gap-y-[24px]">
             <div className="flex items-start flex-col gap-[30px] ">
@@ -30,7 +30,7 @@ const ActiveSecureWelcome = () => {
               </p>
               <div className="flex items-center max-lg:justify-center w-full">
                 <button
-                  className="py-[10px] px-[30px] rounded-[10px] border-2 border-solid border-[#408077] hover:bg-[#408077] hover:text-white transition-all max-lg:w-full duration-500 "
+                  className="py-[10px] sm:px-[30px] rounded-[10px] border-2 border-solid border-[#408077] hover:bg-[#408077] hover:text-white transition-all max-lg:w-full duration-500 max-sm:px-[20px] "
                   onClick={() => setToggle(true)}
                 >
                   Попробовать бесплатно
@@ -41,7 +41,12 @@ const ActiveSecureWelcome = () => {
               </div>
             </div>
             <div className="relative ">
-              <Image src={secureImg} alt="" className="rounded-[40px]" loading="lazy" />
+              <Image
+                src={secureImg}
+                alt=""
+                className="rounded-[40px]"
+                loading="lazy"
+              />
               <Image
                 src={secureKey}
                 alt="secureKey"

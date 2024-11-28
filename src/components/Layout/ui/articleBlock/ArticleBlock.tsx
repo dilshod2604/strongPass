@@ -40,7 +40,7 @@ const ArticleBlock = () => {
 
   return (
     <section>
-      <div className="container">
+      <div className="container p-5">
         <div className="mt-[100px]">
           <div className="flex items-center justify-between mb-[40px]">
             <h1 className="text-[64px] font-[600] text-[#262F33] max-lg:text-[54px] max-md:text-[44px] max-sm:text-[34px]">

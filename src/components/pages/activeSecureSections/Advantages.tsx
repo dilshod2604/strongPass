@@ -54,7 +54,7 @@ const Advantages = () => {
           <h1 className="text-[60px]   font-[600] max-lg:text-[54px] max-md:text-[44px] max-sm:text-[34px]">
             Преимущества
           </h1>
-          <div className="grid grid-cols-3 gap-[20px] max-lg:grid-cols-2 max-sm:grid-cols-1">
+          <div className="grid grid-cols-3 gap-[20px] max-lg:grid-cols-2 max-sm:grid-cols-1 p-4">
             {advantages.map((el, idx) => (
               <AdvantagesBlock el={el} key={idx} />
             ))}

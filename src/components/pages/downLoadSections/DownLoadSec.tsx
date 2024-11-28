@@ -9,7 +9,7 @@ import { RiDownloadLine } from "react-icons/ri";
 const DownLoadSec = () => {
   return (
     <section>
-      <div className="container">
+      <div className="container p-5">
         <div className="flex flex-col">
           <div className="w-full flex flex-col items-center justify-center gap-y-[40px]">
             <h1 className="text-black text-[72px] font-semibold  max-lg:text-[62px] max-md:text-[52px] max-sm:text-[42px]">Скачать</h1>

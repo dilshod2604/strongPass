@@ -87,7 +87,7 @@ const AlmetibinPossibilities = () => {
   ];
   return (
     <div>
-      <div className="container">
+      <div className="container p-5">
         <div className="flex items-center flex-col justify-center w-[100%] gap-[40px] ">
           <div className="flex items-center flex-col gap-[10px]">
             <h1 className="text-[60px] font-[600] max-lg:text-[50px] max-md:text-[40px] max-sm:text-[30px]">

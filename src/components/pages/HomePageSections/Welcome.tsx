@@ -22,7 +22,7 @@ const Welcome = () => {
   }, []);
   return (
     <section>
-      <div className="container">
+      <div className="container p-5 ">
         <div className="mt-[10px]">
           <h1 className="text-[72px] text-[#262F33] leading-tight font-bold max-lg:text-[62px] max-md:text-[52px] max-sm:text-[42px]">
             Ваша безопасность <br /> начинается с паролей

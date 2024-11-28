@@ -49,7 +49,7 @@ const AlmetibinAdvantages = () => {
 
   return (
     <div className="my-[100px]">
-      <div className="container">
+      <div className="container p-5">
         <div className="flex items-start flex-col gap-[40px]">
           <h1 className="text-[60px] font-[600] max-lg:text-[50px] max-md:text-[40px] max-sm:text-[30px] max-lg:text-center max-lg:w-full">
             Преимущества

@@ -9,7 +9,7 @@ import Image from "next/image";
 const HomeProducts = () => {
   return (
     <section>
-      <div className="container">
+      <div className="container p-5">
         <div className="mt-[60px]">
           <h1 className="text-[64px] font-[700] text-[#262F33]  max-lg:text-[50px] max-md:text-[40px] max-sm:text-[30px]">
             Продукты

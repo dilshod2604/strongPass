@@ -7,7 +7,7 @@ import ArticleBlock from "@/components/Layout/ui/articleBlock/ArticleBlock";
 const BlogIdInfo = () => {
   return (
     <section>
-      <div className="container">
+      <div className="container p-5">
         <div className="flex flex-col gap-y-3">
           <h1 className="text-[48px] font-semibold text-[#262F33] m-0 text-start max-w-[1180px] ">
             Как создать слабый пароль или типовые шаблоны в паролях и как с ними

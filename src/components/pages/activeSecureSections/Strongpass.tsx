@@ -7,7 +7,7 @@ import Image from "next/image";
 const Strongpass = () => {
   return (
     <div>
-      <div className="container flex items-start flex-col gap-[40px] ">
+      <div className="container flex items-start flex-col gap-[40px]  p-5">
         <h1 className="text-[60px] lg:w-[500px] font-[600] max-lg:text-[50px] max-md:text-[40px] max-sm:text-[30px] max-lg:text-center max-lg:w-full">
           Почему нужен <span className="text-[#408077]">Strongpass</span>?
         </h1>

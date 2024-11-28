@@ -6,7 +6,7 @@ import Image from "next/image";
 const Work = () => {
   return (
     <div className="my-[100px]">
-      <div className="container">
+      <div className="container p-5">
         <div className="flex items-center justify-between w-[100%] gap-x-[20px] max-lg:flex-col-reverse gap-y-[16px] ">
           <div className="max-w-[600px] rounded-[40px] bg-[#F2F5F4] relative flex items-end flex-col justify-center   pt-[60px] pl-[60px] pb-[60px]">
             <Image
@@ -25,7 +25,7 @@ const Work = () => {
               </button>
             </div>
           </div>
-          <div className="flex items-start flex-col gap-[20px]">
+          <div className="flex items-start flex-col gap-[20px] ">
             <h1 className="max-w-[400px] text-[60px] leading-[70px] font-[600] max-lg:text-[50px] max-md:text-[40px] max-sm:text-[30px]">
               Как это работает?
             </h1>

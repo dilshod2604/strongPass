@@ -7,7 +7,7 @@ import { GoArrowRight } from "react-icons/go";
 const BlosSec = () => {
   return (
     <section>
-      <div className="container">
+      <div className="container p-5">
         <div className="flex flex-col items-center gap-y-[60px]">
           <h1 className="text-[72px] font-semibold flex items-center w-full justify-center text-[#262F33] max-lg:text-[62px] max-md:text-[52px] max-sm:text-[42px]">
             Статьи

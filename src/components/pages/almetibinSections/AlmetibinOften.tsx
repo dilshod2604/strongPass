@@ -9,7 +9,7 @@ const AlmetibinOften = () => {
   const [question5, setQuestion5] = useState(false);
   return (
     <div className="my-[100px]">
-      <div className="container">
+      <div className="container p-5">
         <div className="w-[100%] flex items-center flex-col justify-center gap-[20px]">
           <h1 className="text-[60px] font-[600] max-lg:text-[50px] max-md:text-[40px] max-sm:text-[30px]">
             Часто задаваемые вопросы

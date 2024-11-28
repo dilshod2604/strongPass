@@ -61,13 +61,13 @@ const Possibilities = () => {
   ];
   return (
     <div>
-      <div className="container">
+      <div className="container p-5">
         <div className="flex items-center flex-col justify-center w-[100%] gap-[40px]">
-          <div className="flex items-center flex-col gap-[10px]">
-            <h1 className="text-[60px] font-[600] max-lg:text-[50px] max-md:text-[40px] max-sm:text-[30px]">
+          <div className="flex items-center flex-col gap-[10px] px-4 ">
+            <h1 className="text-[60px] font-[600] max-lg:text-[50px] max-md:text-[40px] max-sm:text-[30px] max-sm:text-center">
               Возможности
             </h1>
-            <h6 className="text-[20px]">
+            <h6 className="text-[20px] max-sm:text-center ">
               Продукт лицензируется по количеству защищаемых учетных записей в
               домене.
             </h6>

@@ -6,7 +6,7 @@ import CommonQuestions from "./CommonQuestions";
 const BuySec = () => {
   return (
     <section>
-      <div className="container">
+      <div className="container p-5">
         <div className=" flex flex-col items-center">
           <div className="flex flex-col gap-y-[40px] text-center">
             <h1 className="text-[73px] font-semibold max-lg:text-[62px] max-md:text-[42px]">

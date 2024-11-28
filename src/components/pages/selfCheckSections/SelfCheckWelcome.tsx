@@ -14,7 +14,7 @@ const SelfCheckWelcome = () => {
   return (
     <>
       <div>
-        <div className="container flex items-center flex-col gap-[50px]">
+        <div className="container flex items-center flex-col gap-[50px] p-5">
           <div className="flex items-center justify-between w-[100%] max-lg:flex-col-reverse ">
             <div className="flex items-start flex-col gap-[30px]">
               <h1 className="text-[60px] font-[600] max-w-[600px]  max-lg:text-center max-lg:text-[50px] max-md:text-[40px] max-sm:text-[30px]">

@@ -49,7 +49,7 @@ const ContactSection = () => {
   return (
     <section className="mt-[37px] mb-[50px]">
       <ToastContainer />
-      <div className="container">
+      <div className="container p-5">
         {/* MAIN  */}
         <div className="flex flex-col items-center">
           {/* HEAD  */}

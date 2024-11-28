@@ -45,7 +45,7 @@ const SelfCheckContents = () => {
   ];
   return (
     <div className="my-[100px]">
-      <div className="container">
+      <div className="container p-5">
         <div className="w-[100%] flex items-start flex-wrap gap-[20px] max-lg:justify-center">
           {self.map((el, idx) => (
             <div

@@ -8,7 +8,7 @@ import Image from "next/image";
 
 const AlmetibinWelcome = () => {
   return (
-    <div className="container">
+    <div className="container p-5">
       <div className=" flex items-center flex-col gap-[50px]">
         <div className="flex items-center justify-between w-full max-lg:flex-col-reverse ">
           <div className="flex items-start flex-col gap-[30px]">

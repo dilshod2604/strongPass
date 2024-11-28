@@ -54,7 +54,7 @@ const QuestionForm = () => {
       <ToastContainer />
       <div className="container">
         {/* MAIN FORM  */}
-        <div className="flex lg: gap-x-[50px] justify-between w-full  bg-[#408077] rounded-[24px] p-[60px] mt-[100px] max-lg:flex-col gap-y-[40px] max-sm:p-[30px] ">
+        <div className="flex lg: gap-x-[50px] justify-between w-full  bg-[#408077] rounded-[24px] p-[60px] mt-[100px] max-lg:flex-col gap-y-[40px] max-sm:p-[30px]">
           {/* FORM LEFT  */}
           <div>
             <h2 className="text-[64px] font-[600] leading-[60px] text-white max-lg:text-[50px] max-md:text-[40px] max-sm:text-[30px] ">
@@ -88,7 +88,7 @@ const QuestionForm = () => {
 
           {/* FORM RIGHT  */}
           <form
-            className="bg-white rounded-[27px] shadow-lg p-[36px] lg:w-[477px] max-lg:w-full max-sm:p-[20px]max-sm:rounded-[20px]"
+            className="bg-white rounded-[27px] shadow-lg p-[36px] lg:w-[477px] max-lg:w-full max-sm:p-[20px] max-sm:rounded-[20px]"
             onSubmit={handleSubmit(onSubmit)}
           >
             <div className="mb-[10px]">
@@ -125,7 +125,7 @@ const QuestionForm = () => {
             <div className="flex items-center justify-between mt-[-15px]">
               <button
                 type="submit"
-                className="flex items-center justify-center bg-transparent border border-[#407F77] text-[#407F77] rounded-lg px-6 py-[10px] hover:bg-[#407F77] hover:text-white transition-colors w-full"
+                className="flex items-center justify-center bg-transparent border border-[#407F77] text-[#407F77] rounded-lg sm:px-6 py-[10px] hover:bg-[#407F77] hover:text-white transition-colors w-full max-sm:px-4"
               >
                 Отправить
               </button>
