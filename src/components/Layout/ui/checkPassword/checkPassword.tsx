@@ -1,14 +1,32 @@
 "use client";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import checkBg from "../../../../assets/products/securePage/img/checkPasswordBg.png";
 import checkBlock from "../../../../assets/products/securePage/img/checkPasswordBlock.png";
 import topRight from "../../../../assets/products/securePage/img/toprightIcongreen.svg";
 import Image from "next/image";
 import StrengthPassword from "../strengthPassword/strengthPassword";
 import useToggleStore from "@/zustand/useToggleStore";
+import { useRouter } from "next/navigation";
 
 const CheckPassword = () => {
   const { isToggled, setToggle } = useToggleStore();
+  const [isMobile, setIsMobile] = useState(false);
+  const router = useRouter();
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 640);
+    };
+    window.addEventListener("resize", handleResize);
+    handleResize();
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+  const openModal = () => {
+    if (isMobile) {
+      router.push("/mobile/checkPassword");
+    } else {
+      setToggle(true);
+    }
+  };
   return (
     <>
       <div className="my-[100px]">
@@ -25,7 +43,7 @@ const CheckPassword = () => {
               <div className="flex items-center mt-[20px]">
                 <button
                   className="py-[10px] px-[30px] text-white rounded-[10px] border-2 border-solid border-white  hover:bg-[#408077] hover:text-white transition-all hover:border-[#408077]"
-                  onClick={() => setToggle(true)}
+                  onClick={ openModal}
                 >
                   Проверить пароль
                 </button>

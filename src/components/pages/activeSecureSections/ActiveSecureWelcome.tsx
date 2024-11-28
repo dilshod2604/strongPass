@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import topRight from "../../../assets/products/securePage/img/toprightIcon.png";
 import secureImg from "../../../assets/products/securePage/Frame_183.png";
 import secureKey from "../../../assets/products/securePage/img/securerKeyicon.png";
@@ -10,9 +10,27 @@ import Image from "next/image";
 import { MdErrorOutline } from "react-icons/md";
 import useLicenseStore from "@/zustand/useLicenseStore";
 import License from "@/components/Layout/ui/license/License";
+import { useRouter } from "next/navigation";
 
 const ActiveSecureWelcome = () => {
   const { isToggled, setToggle } = useLicenseStore();
+  const [isMobile, setIsMobile] = useState(false);
+  const router = useRouter();
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 640);
+    };
+    window.addEventListener("resize", handleResize);
+    handleResize();
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+  const openModal = () => {
+    if (isMobile) {
+      router.push("/mobile/testting");
+    } else {
+      setToggle(true);
+    }
+  };
   return (
     <>
       <div className="container p-5">
@@ -31,7 +49,7 @@ const ActiveSecureWelcome = () => {
               <div className="flex items-center max-lg:justify-center w-full">
                 <button
                   className="py-[10px] sm:px-[30px] rounded-[10px] border-2 border-solid border-[#408077] hover:bg-[#408077] hover:text-white transition-all max-lg:w-full duration-500 max-sm:px-[20px] "
-                  onClick={() => setToggle(true)}
+                  onClick={openModal}
                 >
                   Попробовать бесплатно
                 </button>

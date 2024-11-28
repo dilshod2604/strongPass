@@ -1,15 +1,33 @@
 "use client";
 import Image from "next/image";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import topRight from "../../../assets/products/securePage/img/toprightIcon.png";
 import selfIcon from "../../../assets/products/selfcheckPage/img/selfCheckIcon.png";
 import selfImg from "../../../assets/products/selfcheckPage/img/selfCheckImg.png";
 import sircle from "../../../assets/products/securePage/Group 4.png";
 import useToggleStore from "@/zustand/useToggleStore";
 import StrengthPassword from "@/components/Layout/ui/strengthPassword/strengthPassword";
+import { useRouter } from "next/navigation";
 
 const SelfCheckWelcome = () => {
   const { isToggled, setToggle } = useToggleStore();
+  const [isMobile, setIsMobile] = useState(false);
+  const router = useRouter();
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 640);
+    };
+    window.addEventListener("resize", handleResize);
+    handleResize();
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+  const openModal = () => {
+    if (isMobile) {
+      router.push("/mobile/checkPassword");
+    } else {
+      setToggle(true);
+    }
+  };
 
   return (
     <>
@@ -26,7 +44,7 @@ const SelfCheckWelcome = () => {
               </p>
               <div className="flex items-center w-full max-lg:justify-center">
                 <button
-                  onClick={() => setToggle(true)}
+                  onClick={openModal}
                   className="py-[10px] px-[30px] rounded-[10px] border-2 border-solid border-[#408077] hover:bg-[#408077] hover:text-white transition-all"
                 >
                   Попробовать бесплатно
