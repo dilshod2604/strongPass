@@ -43,7 +43,7 @@ const CheckPassword = () => {
               <div className="flex items-center mt-[20px]">
                 <button
                   className="py-[10px] px-[30px] text-white rounded-[10px] border-2 border-solid border-white  hover:bg-[#408077] hover:text-white transition-all hover:border-[#408077]"
-                  onClick={ openModal}
+                  onClick={openModal}
                 >
                   Проверить пароль
                 </button>
@@ -56,7 +56,7 @@ const CheckPassword = () => {
               <Image
                 src={checkBlock}
                 alt="checkBlock"
-                className="absolute top-[40px] left-[-40px]  max-sm:w-[125px]"
+                className="absolute sm:top-[40px] max-sm:top-[30px] left-[-40px]  max-sm:w-[125px]"
               />
               <Image
                 src={checkBg}
