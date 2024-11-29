@@ -23,7 +23,7 @@ const Work = () => {
              className="absolute bottom-0 right-0"
             />
 
-            <div className="flex items-center absolute bottom-0 right-0 py-[20px] px-[20px] ">
+            <div className="flex items-center absolute bottom-0 right-0 py-[20px] px-[20px]">
               <button className="py-[10px] px-[30px] rounded-[10px] border-2 border-solid border-[#408077] hover:bg-[#408077] hover:text-white transition-all">
                 Смотреть видео
               </button>

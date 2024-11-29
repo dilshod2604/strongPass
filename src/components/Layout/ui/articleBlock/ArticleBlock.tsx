@@ -91,7 +91,7 @@ const ArticleBlock = () => {
           <div className="hidden items-center gap-[10px] max-sm:flex max-sm:w-full ">
             <Link
               href="/article"
-              className="text-[18px] font-[500] text-[#408077] border-2 border-[#40807776] bg-transparent rounded-[9px] px-[30px] py-[14px]  hover:bg-[#408077] hover:text-white transition-all duration-500 max-sm:w-full  max-sm:text-center"
+              className="text-[18px] font-[500] text-[#408077] border-2 border-[#40807776] bg-transparent rounded-[9px] px-[30px] py-[11px]  hover:bg-[#408077] hover:text-white transition-all duration-500 max-sm:w-full  max-sm:text-center"
             >
               Смотреть все
             </Link>

@@ -119,8 +119,8 @@ const AlmetibinPossibilities = () => {
                 <span className="font-[600]">10</span>
               </p>
               <div className="flex items-center">
-                <button className="py-[10px] px-[50px] text-[#408077] font-[600] rounded-[10px] border-2 border-solid border-[#408077] hover:bg-[#408077] hover:text-white transition-all">
-                  Попробовать бесплатно
+                <button className="sm:py-[10px] max-sm:py-[12px] sm:px-[50px] max-sm:px-[36px] sm:text-[18px]  max-sm:text-[14px] text-[#408077] font-[600] rounded-[10px] border-2 border-solid border-[#408077] hover:bg-[#408077] hover:text-white transition-all">
+                  Скачать бесплатно
                 </button>
                 <button className="bg-[#408077] w-[47px] h-[47px] flex items-center justify-center rounded-[10px]">
                   <Image src={topRight} alt="" width={14} height={14} />
@@ -150,7 +150,7 @@ const AlmetibinPossibilities = () => {
                 <span className="font-[600]">согласно лицензии</span>
               </p>
               <div className="flex items-center">
-                <button className="py-[10px] px-[50px] text-[#408077] font-[600] rounded-[10px] border-2 border-solid border-[#408077] hover:bg-[#408077] hover:text-white transition-all">
+                <button className="sm:py-[10px] max-sm:py-[12px] sm:px-[50px] max-sm:px-[27px] sm:text-[18px]  max-sm:text-[14px] text-[#408077] font-[600] rounded-[10px] border-2 border-solid border-[#408077] hover:bg-[#408077] hover:text-white transition-all">
                   Попробовать бесплатно
                 </button>
                 <button className="bg-[#408077] w-[47px] h-[47px] flex items-center justify-center rounded-[10px]">

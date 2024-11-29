@@ -17,7 +17,7 @@ const AlmetibinWork = () => {
             />
           </div>
           <div className="flex items-start flex-col gap-[20px]">
-            <h1 className="max-w-[400px] text-[60px] leading-[70px] font-[600]">
+            <h1 className="max-w-[400px] text-[60px] leading-[70px] font-[600] max-lg:text-[50px] max-md:text-[40px] max-sm:text-[30px]">
               Как это работает?
             </h1>
             <p className="max-w-[450px] text-[20px]">
