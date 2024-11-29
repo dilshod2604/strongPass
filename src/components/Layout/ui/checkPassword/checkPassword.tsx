@@ -32,7 +32,7 @@ const CheckPassword = () => {
     <>
       <div className="my-[100px]">
         <div className="container">
-          <div className="w-full sm:p-[40px] flex items-center justify-between rounded-[40px] bg-[#262F33] max-lg:flex-col gap-y-[37px] max-sm:p-[20px]">
+          <div className="w-full sm:p-[40px] flex items-center justify-between rounded-[40px] bg-[#262F33] max-lg:flex-col gap-y-[37px] max-sm:p-[20px] max-sm:pt-[30px]">
             <div className="flex items-start flex-col gap-[20px] w-full">
               <h2 className="text-[35px] max-w-[545px] text-white max-sm:text-[28px]">
                 Проверьте пароль на надежность и соответствие требованиям
@@ -43,12 +43,12 @@ const CheckPassword = () => {
               </h6>
               <div className="flex items-center mt-[20px] max-sm:w-full ">
                 <button
-                  className=" max-sm:w-full py-[10px] px-[30px] text-white rounded-[10px] border-2 border-solid border-white  hover:bg-[#408077] hover:text-white transition-all hover:border-[#408077]"
+                  className=" max-sm:w-full py-[10px] sm:px-[30px] text-white rounded-[10px] border-2 border-solid border-white  hover:bg-[#408077] hover:text-white transition-all hover:border-[#408077] max-sm:px-[20px]"
                   onClick={openModal}
                 >
                   Проверить пароль
                 </button>
-                <button className="bg-white w-[47px] h-[47px] flex items-center justify-center rounded-[10px]">
+                <button className="bg-white max-sm:w-[55px]  sm:w-[47px] h-[47px] flex items-center justify-center rounded-[10px] ">
                   <Image src={topRight} alt="" width={14} height={14} />
                 </button>
               </div>
