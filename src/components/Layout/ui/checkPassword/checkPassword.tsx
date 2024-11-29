@@ -55,8 +55,8 @@ const CheckPassword = () => {
             <div className="relative w-full  ">
               <Image
                 src={checkBlock}
-                alt=""
-                className="absolute top-[40px] left-[-40px]"
+                alt="checkBlock"
+                className="absolute top-[40px] left-[-40px]  max-sm:w-[125px]"
               />
               <Image
                 src={checkBg}
