@@ -17,8 +17,8 @@ const Header = () => {
       <header className="sticky top-0 z-[99] w-[100%] mb-[40px] bg-[#fafcfc]">
         <div className="container px-5">
           <div className=" flex items-center justify-between py-[27px]">
+            <BurgerButton />
             <div className="flex items-center gap-[80px]">
-              <BurgerButton />
               <Link href="/">
                 <Image
                   src={headerLogo}
