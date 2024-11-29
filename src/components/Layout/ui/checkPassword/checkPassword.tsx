@@ -3,6 +3,7 @@ import React, { useEffect, useState } from "react";
 import checkBg from "../../../../assets/products/securePage/img/checkPasswordBg.png";
 import checkBlock from "../../../../assets/products/securePage/img/checkPasswordBlock.png";
 import topRight from "../../../../assets/products/securePage/img/toprightIcongreen.svg";
+import circle from "../../../../assets/products/securePage/circle5.png";
 import Image from "next/image";
 import StrengthPassword from "../strengthPassword/strengthPassword";
 import useToggleStore from "@/zustand/useToggleStore";
@@ -31,7 +32,7 @@ const CheckPassword = () => {
     <>
       <div className="my-[100px]">
         <div className="container">
-          <div className="w-[100%] p-[40px] flex items-center justify-between rounded-[40px] bg-[#262F33] max-lg:flex-col gap-y-[37px]">
+          <div className="w-full sm:p-[40px] flex items-center justify-between rounded-[40px] bg-[#262F33] max-lg:flex-col gap-y-[37px] max-sm:p-[20px]">
             <div className="flex items-start flex-col gap-[20px] w-full">
               <h2 className="text-[35px] max-w-[545px] text-white max-sm:text-[28px]">
                 Проверьте пароль на надежность и соответствие требованиям
@@ -40,9 +41,9 @@ const CheckPassword = () => {
               <h6 className="text-[15px] text-gray-300">
                 Технологии Strongpass доступны онлайн.
               </h6>
-              <div className="flex items-center mt-[20px]">
+              <div className="flex items-center mt-[20px] max-sm:w-full ">
                 <button
-                  className="py-[10px] px-[30px] text-white rounded-[10px] border-2 border-solid border-white  hover:bg-[#408077] hover:text-white transition-all hover:border-[#408077]"
+                  className=" max-sm:w-full py-[10px] px-[30px] text-white rounded-[10px] border-2 border-solid border-white  hover:bg-[#408077] hover:text-white transition-all hover:border-[#408077]"
                   onClick={openModal}
                 >
                   Проверить пароль
@@ -52,18 +53,25 @@ const CheckPassword = () => {
                 </button>
               </div>
             </div>
-            <div className="relative w-full  ">
+            <div className="relative w-full max-sm:pl-[48px] sm:ml-[120px] max-lg:pl-[100px]">
               <Image
                 src={checkBlock}
                 alt="checkBlock"
-                className="absolute sm:top-[40px] max-sm:top-[30px] left-[-40px]  max-sm:w-[125px]"
+                loading="lazy"
+                className="absolute sm:top-[40px] max-sm:top-[20px] max-sm: left-[28px] sm:left-[-40px]  max-sm:w-[117px] max-sm:h-[85px] z-20  "
+              />
+              <Image
+                src={circle}
+                alt="circle"
+                className="absolute max-sm:top-[30px] max-sm:w-[68px] max-sm:h-[68px] max-sm:left-[13px] sm:w-[121px] sm:h-[121px] sm:top-[70px] sm:left-[-80px] "
               />
               <Image
                 src={checkBg}
                 alt=""
                 width={480}
                 height={320}
-                className=""
+                loading="lazy"
+                className="  relative  max-sm:w-[277px] max-sm:h-[181px] z-10  "
               />
             </div>
           </div>
