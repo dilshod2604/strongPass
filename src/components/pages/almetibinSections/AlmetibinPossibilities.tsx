@@ -95,7 +95,7 @@ const AlmetibinPossibilities = () => {
             </h1>
           </div>
           <div className="flex items-center gap-[20px] max-lg:flex-col gap-y-[40px]">
-            <div className="max-w-[450px] lg:h-[700px] relative bg-[#F2F5F4] rounded-[10px] p-[40px] flex items-center flex-col justify-center gap-[30px]">
+            <div className="max-w-[450px] lg:h-[700px] relative bg-[#F2F5F4] rounded-[10px] p-[40px] flex items-center flex-col justify-center gap-[30px] max-sm:p-[30px]">
               <Image
                 src={passwordRedImg}
                 alt=""
@@ -127,7 +127,7 @@ const AlmetibinPossibilities = () => {
                 </button>
               </div>
             </div>
-            <div className="max-w-[450px] lg:h-[700px] relative bg-[#F2F5F4] rounded-[10px] p-[40px] flex items-center flex-col justify-center gap-[30px]">
+            <div className="max-w-[450px] lg:h-[700px] relative bg-[#F2F5F4] rounded-[10px] p-[40px] flex items-center flex-col justify-center gap-[30px] max-sm:p-[30px]">
               <Image
                 src={passwordGreenImg}
                 alt=""
