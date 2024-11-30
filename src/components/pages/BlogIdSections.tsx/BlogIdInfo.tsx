@@ -9,7 +9,7 @@ const BlogIdInfo = () => {
     <section>
       <div className="container p-5">
         <div className="flex flex-col gap-y-3">
-          <h1 className="text-[48px] font-semibold text-[#262F33] m-0 text-start max-w-[1180px] ">
+          <h1 className="text-[48px] font-semibold text-[#262F33] m-0 text-start   max-sm:text-[30px]">
             Как создать слабый пароль или типовые шаблоны в паролях и как с ними
             бороться
           </h1>
